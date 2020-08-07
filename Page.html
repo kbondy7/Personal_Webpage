@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <title>Kieran Bondy</title>
+        <link rel="stylesheet" type="text/css" href="Page.css"/>
+        
+    </head>
+    <body>
+        <div id="page" class = "container">
+            <div class="nav-container" onmouseover="shownav()" onmouseout="hidenav()">
+                <div id="first" class="nav-item" onclick="scrollto('name')">
+                    <img id= "name-img" class="nav-img" src="./images/med-circle.png">
+                    <p class="nav-text">Home</p>
+                </div>
+                <div class="nav-item" onclick="scrollto('about')">
+                    <img id = "about-img" class="nav-img" src="./images/select-circle.png">
+                    <p class="nav-text">About Me</p>
+                </div>
+                <div class="nav-item" onclick="scrollto('projects')">
+                    <img id="projects-img" class="nav-img" src="./images/select-circle.png">
+                    <p class="nav-text">Projects</p>
+                </div>
+                <div class="nav-item" onclick="scrollto('experience')" id="last">
+                    <img id="experience-img" class="nav-img" src="./images/select-circle.png">
+                    <p class="nav-text">Experience</p>
+                </div>
+            </div>
+            <div id="name" class = "namepage-container">
+                <div class = "intro-container">
+                    <p class="intro-text">Hello my name is</p>
+                </div>
+                <div class="name-container">
+                    <p class="name-text">Kieran</p>
+                </div>
+                <div class="scroll-container">
+                    <p class="scroll-text">scroll down</p>
+                    <img class="scroll-img" src = "images/down-arrow.png">
+                </div>
+            </div>
+            <div id="about" class="aboutme-container">
+                <div class="title-container">
+                    <p class="title-text">About Me</p>
+                </div>
+                <div class="face-container">
+                    <img class="face-img" src="images/face.png">
+                </div>
+                <div class="abouttext-container">
+                    <p class="about-text">I am currently a senior Computer Science student at Northwestern University. My interests in coding stemmed from a love of problems solving games and puzzles as a child. Since then, I have pursued this passion in many different forms both academically and in my free time. I am interested in many different facets of Computer Science; for example, Blockchain, App Development, Cyber Security, and Orchestration Scripts.</p>
+                    <p class="about-text">I perfom on with an improv group monthly called the Titanic players. I have been doing Improv for over 5 years and it is an amazing way to relax and allow me to freely express my creative side. Although not musically gifted, I have a appreciation for music and the communities it can create. Some of my other interests include soccer, hockey, and videogames</p>
+                    <div class="about-imgs">
+                        <a class="link" href="https://github.com/kbondy7" target="_blank">
+                            <img class="projectcomps-img" src="./images/github.png" title="Github">
+                        </a>
+                        <a class="link" href="https://www.linkedin.com/in/kieran-bondy-a3a4b915a/" target="_blank">
+                            <img class="projectcomps-img" src="./images/linkedin.png" title="Angular">
+                        </a>
+                        <a class="link" href="mailto:kieranbondy2021@u.northwestern.edu" target="_blank">
+                            <img class="projectcomps-img" src="./images/email.png" title="Angular">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="projects" class = "projects-container">
+                <div class="title-container">
+                    <p class="title-text">Projects</p>
+                </div>
+                <div class="project-container" onclick="show('marion')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">Marion</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/angular.png" title="Angular">
+                            <img class="projectcomps-img" src="./images/firebase.png" title="Firebase">
+                            <img class="projectcomps-img" src="./images/typescript.png" title="Typescript">
+                            <img class="projectcomps-img" src="./images/ckeditor-5.png" title="CKEditor">
+                        </div>
+                    </div>
+                    <div id="marion" class="projectcontent-container">
+                        <div class="header-container">
+                            <p class="header">Links: </p>
+                            <a class="link" href="https://marion.app/" target="_blank">Live Website</a>
+                        </div>
+                        <p>Marion is web based note taking application that is currently in development. Our mission is to create a work space that is organized in a human centered system. Using tags and unique mapping functionality marion hopes to change how people use their devices to take notes. I have been working as a software engineer on this project for around 6 months and have been handling both frontend and backend tasks.</p>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('research')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">Orchestration Scripts Research</p>
+                    </div>
+                    <div id="research" class="projectcontent-container">
+                        <div class="header-container">
+                            <p class="header">Links: </p>
+                            <a class="link" href="http://dtr.northwestern.edu/" target="_blank">DTR Website</a>
+                            <a class="link" href="https://www.youtube.com/watch?v=FGFG1RgLu6Q&list=PLNRCFEXhwz0HnQfJdKdGsbT61RzVOafUZ" target="_blank">Research Update Video</a>
+                        </div>
+                        <p>This past spring I joined a unique class at Northwestern called Design, Thinking, and Research. It allows for Undergraduate students to partake in research opportunities in a class room setting mentored by PHD students conduct research in the same focus. This spring Tommy and I began our first quarter working on Orchestration Scripts research. We conducted needfinding studies trying to figure out exactly how students were working in DTR in order to as a first step to building helpful scripts for mentors to effeciently offer help wehn students are stuck. The design arguments for our current research are below.</p>
+                        <div class="dino-image">
+                            <img class="single-img" src="./images/dtr.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('freedomlink')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">Freedom Link</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/react.png" title="React">
+                            <img class="projectcomps-img" src="./images/python.png" title="Python">
+                        </div>
+                    </div>
+                    <div id="freedomlink" class="projectcontent-container">
+                        <div class="header-container">
+                            <p class="header">Links: </p>
+                            <a class="link" href="http://freedom-generator.s3-website-us-east-1.amazonaws.com/" target="_blank">Live Website</a>
+                            <a class="link" href="https://github.com/cs394-s20/freedom-generator" target="_blank">Github Repo</a>
+                        </div>
+                        <p>This project was a part of our CS 394 curriculum. As a team we were assigned a client for the second half of the class and were tasked with working with them towards a finished product. Sheila Bedi, a Professor of Law at Northwestern, was our client. We worked together virtually over the course of 6 weeks to create a product that could help people with loved ones in jail appeal their sentences through our user friendly website.</p>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('metronome')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">Distributed Metronome</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/react.png" title="React">
+                            <img class="projectcomps-img" src="./images/python.png" title="Python">
+                        </div>
+                    </div>
+                    <div id="metronome" class="projectcontent-container">
+                        <div class="header-container">
+                            <p class="header">Links: </p>
+                            <a class="link" href="https://metronome-877ec.web.app/" target="_blank">Live Website</a>
+                            <a class="link" href="https://github.com/cs394-s20/distributed-metronome" target="_blank">Github Repo</a>
+                        </div>
+                        <p>This project was a part of our CS 394 curriculum. As a team we brainstormed problems we saw around us during our new online college environment. We decided to create a platform that synced simultaneous live performances from different locations and stream them together on twitch. Our goal was to creat a web applications that University groups could use to try and create similar live performance experiences as the ones they had on campus.</p>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('harbor')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">The Harbor</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/angular.png" title="Angular">
+                            <img class="projectcomps-img" src="./images/firebase.png">
+                            <img class="projectcomps-img" src="./images/typescript.png">
+                        </div>
+                    </div>
+                    <div id="harbor" class="projectcontent-container">
+                        <div class="header-container">
+                            <p class="header">Website: </p>
+                            <a class="link" href="https://lighthouseharbor.app/" target="_blank">Link</a>
+                        </div>
+                        <p>The harbor is a web database for free teaching assets. The goal as we develop and grow is to create a resource for teachers to find and share lesson plans, resources, worksheets, and much more all for free. The privatization of learning and teaching materials is long outdated and we hope to take the first steps in creating an environment for free resources.</p>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('tft')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">TFT Data Analysis</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/python.png" title="Python">
+                            <img class="projectcomps-img" src="./images/jupyter.png" title="Jupyter Notebook">
+                        </div>
+                    </div>
+                    <div id="tft" class="projectcontent-container">
+                        <p>As the final project for our Data Analysis course my partner and I did a data analysis on Blizzard's game Team Fight Tactics. We used Blizzards API to pull match data from thousands of high ranked matches to analyze what compositions where the most successful. After we had that information we did further research into what winning compositions beat others in hopes to give players and idea of how to counter team compositions.</p>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('dino-dash')">
+                    <div class="projectheader-container">
+                        <p class="project-title">Dino Dash</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/unity.png" title="Unity">
+                            <img class="projectcomps-img" src="./images/c-sharp.png" title="C#">
+                        </div>
+                    </div>
+                    <div id="dino-dash" class="projectcontent-container">
+                        <div class="header-container">
+                            <p class="header">Website: </p>
+                            <a class="link" href="https://apps.apple.com/us/app/dino-dash-outrun-extinction/id1484347115" target="_blank">Appstore Link</a>
+                            <a class="link" href="https://github.com/samdogg7/Dino-Dash" target="_blank">Github Repo</a>
+                        </div>
+                        <p>While studying in Copenhagen I took a game development class in which we developed a 2D game as one of our projects. In a team of 4 we developed an endless runner mobile application called Dino Dash. We wanted to create a unique mechanic that defined our game and after brainstorming we decided to have the player make waves across the screen instead of the standard tap to jump functionality. After various play testing sessions we had a finalized version to turn in for class. We wanted to keep working on the game and release it on the app store so we posted a video of our game on reddit to get feedback from the community on how to improve our game. We had a lot of responses and made a lot of changes to our game and are currently implementing some of the suggestions before releasing it.</p>
+                        <div class="dino-image">
+                            <img class="single-img" src="./images/DinoDash.gif">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('turtle-takeover')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">Turtle Takeover</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/unity.png" title="Unity">
+                            <img class="projectcomps-img" src="./images/c-sharp.png" title="C#">
+                            <img class="projectcomps-img" src="./images/arduino.jpg" title="Arduino">
+                        </div>
+                    </div>
+                    <div id="turtle-takeover" class="projectcontent-container">
+                        <p>Northwestern hosts a music festival at the end of the year and this year reached out to the students to offer the opportunity to make art pieces for the event. I worked with my friend Sasha to build a multimedia art piece. She painted a mural of an animal arcade while I built an arcade machine and created an arcade game. We worked together over a couple of months to build, paint, and set up the art piece for the festival. Although there were some weather complications the game and art piece were a success as students interacted with it throughout the day.</p>
+                        <div class="project-img-container">
+                            <img class = "project-img" src = "./images/TurtlePhoto.jpeg" alt = "">
+                            <img class = "project-img2" src = "./images/TurtleMovie.gif" alt = "">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('tagalong')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">Tagalong</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/react.png">
+                            <img class="projectcomps-img" src="./images/swift.png">
+                            <img class="projectcomps-img" src="./images/firebase.png">
+                            <img class="projectcomps-img" src="./images/typescript.png">
+                        </div>
+                    </div>
+                    <div id="tagalong" class="projectcontent-container">
+                        <p>I joined a club IEEE at Northwestern and became a part of a small team with the sole task of designing an application in React Native. After a few meetings with our mentors I suggested the idea that would become Tagalong. We wanted to create an application that helped promote safety on campus through connectivity. Our final design had three functions. The first was the SafeWalk feature which allowed the users friends to track their progress on their walk home. The second feature, GeoFence, was a feature focused on parents as they could map off an area and be notified if the person they were following had left the area. Our third feature, GroupWeb, allowed the user to select friends to add to a web and if any member left the group then they would all be notified. We achieved all this functionality through react native, Push Notifications, and Mapkits. This paired with databases to store the user data to allow for them to make an account. We presented our final product at the IEEE Project Showcase and were awarded Best Undergraduate Project.</p>
+                        <div class="tagalong-images">
+                            <img class="tag-img" src="./images/tagalongGF4.png">
+                            <img class="tag-img" src="./images/tagalongGW3.png">
+                            <img class="tag-img" src="./images/tagalongSW3.png">
+                        </div>
+                        <p>Tagalong ran into some issues in the later stages of development and React Native restricted our ability to constantly check user location so we were forced with the tough decision of whether or not to Switch to developing in swift. After a lot of thinking I decided to start the project over in Swift, but with a new and more focused direction. I focused simply on the GroupWeb feature as this feature was unique and the bulk of our design. I am currently still developing Crowdd in my free time.</p>
+                    </div>
+                </div>
+                <div class="project-container" onclick="show('coinflip')">
+                    <div class="projectheader-container" >
+                        <p class="project-title">Coinflip Mobile App</p>
+                        <p class="project-built">built using: </p>
+                        <div class="projectcomps-container">
+                            <img class="projectcomps-img" src="./images/swift.png" title="Swift">
+                        </div>
+                    </div>
+                    <div id="coinflip" class="projectcontent-container">
+                        <p>The second project I did in Design Thinking & Communication was working with a local start-up CoinFlip that had Bitcoin ATMs throughout the US. CoinFlip asked our group to create an application that would improve the user experience in using their machines. After interviewing many of their customers and observing how people interacted with the machines we discovered that the main obstacle for users was finding the machines as the website was difficult to operate on mobile. We used Swift and Mapkit to achieve a map that had all the company’s ATM locations and could give you directions to a chosen one. After interviewing users about our initial prototype we added functionality as many said they would not download it simply for mapping. We added A  live price tracking feature that included market data on the crypto currencies offered along with a page that kept users updateD on deals and new machines.</p>
+                        <div class="coinflip-images">
+                            <img class="coinflip-img" src="./images/Coinflip1.png">
+                            <img class="coinflip-img" src="./images/Coinflip2.png">
+                            <img class="coinflip-img" src="./images/Coinflip3.png">
+                            <img class="coinflip-img" src="./images/Coinflip4.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="experience" class="experience-container">
+                <div class="title-container">
+                    <p class="title-text">Experience</p>
+                </div>
+                    <div class="abouttext-container2">
+                        <p class="about-text">Over the course of my college career I have worked on many different projects that span environments and subjects. I have also had ample experience working remotely on software development teams over the past year. These experiences allow me to be an adaptable and effective team member no matter the task or situation. </p>
+                        <p class="about-text">During my Junior summer I worked at Trumid, a Financial Start up with the goal of creating an open trading platform for bonds. During my time there I had many different jobs ranging from upgrading code to Python 3 to building pixel trackers for the companies daily emails. This was my first time working at a computer science focused job and I learned a lot. The most important lessons were learned by simply being in a development environment. I realized how important planning and communication is when managing such a large scale project that depends on many different components and people.</p>
+                        <p class="about-text">I joined the Institute of Electrical and Electronics Engineers during my sophomore year. I learned a lot during my first two quarters in the club working in a small team to build a React Native Application for the IEEE Showcase. The Showcase was an amazing experience to present our ideas and work to industry professionals and was all organized by IEEE. During the Spring I became the Treasurer and helped plan events such as a Hackathon and the EECS Department Barbeque. This position and club has provided me with many skills that I think will be beneficial in a working environment.</p>
+                        <p class="about-text-last">My full resume is attached below.</p>
+                    </div>
+                    <div class = "downloadCon">
+                        <a download="KieranBondyResume.docx" href="images/Kieran_Bondy_Resume.docx" title="Resume (Word)">
+                          <img class = "resumeImg" src="images/doc.png">
+                        </a>
+                        <a download="KieranBondyResume.pdf" href="images/Kieran_Bondy_Resume.pdf" title="Resume (PDF)">
+                          <img class = "resumeImg" src="images/pdf.png">
+                        </a>
+                      </div>
+                
+            </div>
+            <div class="footer">
+                <p class="contact-title">Contact Me</p>
+                <div class="info">
+                    <p>917-755-0949</p>
+                    <p>kieranbondy2021@u.northwestern.edu</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="./noframework.waypoints.js"></script>
+    <script src="Page.js"></script>
+
+
+
+</html>
